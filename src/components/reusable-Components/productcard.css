@@ -1,0 +1,100 @@
+.productCard {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.productCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Image wrapper */
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Image */
+.imageWrapper img {
+  width: 85%;
+  height: 100%;
+  object-fit: contain; /* better for e-commerce */
+  transition: transform 0.4s ease;
+}
+
+.productCard:hover img {
+  transform: scale(1.06);
+}
+
+/* Info */
+.productInfo {
+  padding: 14px 10px 16px;
+  text-align: center;
+}
+
+/* Title */
+.productTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+/* Price */
+.productPrice {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 576px) {
+  .productTitle {
+    font-size: 15px;
+  }
+
+  .productPrice {
+    font-size: 16px;
+  }
+}
+
+/* ===== LAPTOP ===== */
+@media (min-width: 768px) {
+  .productCard {
+    border-radius: 16px;
+  }
+
+  .productInfo {
+    padding: 16px;
+  }
+
+  .productTitle {
+    font-size: 16px;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+  .productCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+  }
+
+  .productTitle {
+    font-size: 17px;
+  }
+
+  .productPrice {
+    font-size: 17px;
+  }
+}

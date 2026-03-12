@@ -1,0 +1,19 @@
+.product-card{
+padding:15px;
+text-align:center;
+}
+
+.product-card img{
+height:200px;
+object-fit:contain;
+margin:auto;
+}
+
+.product-card h6{
+font-size:14px;
+margin-top:10px;
+}
+
+.product-card p{
+font-weight:bold;
+}

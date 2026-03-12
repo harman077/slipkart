@@ -1,0 +1,41 @@
+.cartItem {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.cartImage img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cartDetails {
+  flex: 1;
+}
+
+.qtyControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.qtyControls button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.removeBtn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}

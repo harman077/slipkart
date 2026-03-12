@@ -1,0 +1,152 @@
+/* navbar */
+
+.navbar1{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:whitesmoke;
+  position:sticky;
+  top:0;
+  padding:12px 25px;
+  z-index:1000;
+}
+
+
+/* logo */
+
+.nav-left a{
+  text-decoration:none;
+  color:#ff0000;
+  font-size:26px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+
+/* center menu (hidden on mobile) */
+
+.nav-center{
+  display:none;
+}
+
+
+/* right section (hidden on mobile) */
+
+.nav-right{
+  display:none;
+}
+
+
+/* hamburger */
+
+.hamburger{
+  cursor:pointer;
+  transition:0.2s ease;
+}
+
+.hamburger:hover{
+  color:#ff0000;
+}
+
+
+
+/* ---------------------
+   desktop view
+---------------------- */
+
+@media (min-width:768px){
+
+.navbar1{
+  background:#fff;
+  padding:18px 60px;
+  border-bottom:1px solid #eee;
+}
+
+
+/* logo */
+
+.nav-left a{
+  font-size:24px;
+}
+
+
+/* center menu */
+
+.nav-center{
+  display:flex;
+  list-style:none;
+  gap:35px;
+}
+
+.nav-center a{
+  text-decoration:none;
+  color:#333;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:400;
+  transition:0.3s ease;
+}
+
+.nav-center a:hover{
+  color:#ff0000;
+}
+
+
+/* right side */
+
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.nav-right a{
+  text-decoration:none;
+  color:#333;
+  font-size:15px;
+}
+
+
+/* login button */
+
+.loginbtn{
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.loginbtn:hover{
+  color:#ff0000;
+}
+
+
+/* cart */
+
+.cart-wrapper{
+  position:relative;
+}
+
+.cart-icon{
+  font-size:20px;
+  color:#333;
+}
+
+.cartCount-badge{
+  position:absolute;
+  top:-6px;
+  right:-10px;
+  background:red;
+  color:white;
+  font-size:11px;
+  padding:2px 6px;
+  border-radius:50%;
+}
+
+
+/* hide hamburger on desktop */
+
+.hamburger{
+  display:none;
+}
+
+}

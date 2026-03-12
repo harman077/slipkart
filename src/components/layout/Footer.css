@@ -1,0 +1,128 @@
+/* footer base */
+
+.footer{
+background:#111;
+color:#ccc;
+padding:40px 20px 20px 20px;
+margin-top:60px;
+}
+
+/* container */
+
+.footer-container{
+display:grid;
+grid-template-columns:1fr;
+gap:30px;
+}
+
+/* logo */
+
+.footer-logo{
+color:#cfa878;
+font-size:22px;
+margin-bottom:10px;
+}
+
+/* section titles */
+
+.footer-section h3{
+margin-bottom:15px;
+color:#fff;
+}
+
+/* text */
+
+.footer-section p{
+font-size:14px;
+line-height:1.6;
+}
+
+/* list */
+
+.footer-section ul{
+padding:0;
+}
+
+.footer-section li{
+list-style:none;
+margin-bottom:8px;
+}
+
+/* links */
+
+.footer-section a{
+text-decoration:none;
+color:#ccc;
+font-size:14px;
+transition:0.3s;
+}
+
+.footer-section a:hover{
+color:#cfa878;
+}
+
+/* social links */
+
+.socials{
+display:flex;
+gap:15px;
+margin-top:10px;
+}
+
+.socials a{
+color:#ccc;
+font-size:14px;
+}
+
+.socials a:hover{
+color:#cfa878;
+}
+
+/* bottom */
+
+.footer-bottom{
+border-top:1px solid #333;
+margin-top:30px;
+padding-top:15px;
+text-align:center;
+font-size:13px;
+}
+
+
+/* tablet */
+
+@media (min-width:600px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* desktop */
+
+@media (min-width:992px){
+
+.footer{
+padding:60px 80px 20px 80px;
+}
+
+.footer-container{
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+}
+
+.footer-logo{
+font-size:24px;
+}
+
+.footer-section a{
+font-size:15px;
+}
+
+.footer-bottom{
+font-size:14px;
+}
+
+}

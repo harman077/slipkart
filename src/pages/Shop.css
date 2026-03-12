@@ -1,0 +1,13 @@
+.shop-container{
+padding:30px;
+}
+
+.shop-filter{
+margin-bottom:30px;
+}
+
+.products-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}

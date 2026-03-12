@@ -1,0 +1,203 @@
+/* =========================
+   SECTION 1 (Hero)
+========================= */
+
+.hero-banner{
+    height:90vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    margin:20px;
+}
+
+/* dark overlay */
+
+.hero-banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content .btn{
+    margin-top:225px;
+}
+
+
+
+/* =========================
+   SECTION 2 (Men / Women Category)
+========================= */
+
+.section-2{
+    max-width:100%;
+    padding:10px;
+    margin-block:3rem;
+}
+
+.imgWrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    margin-bottom:15px;
+}
+
+.heroImage{
+    max-width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius:4px;
+}
+
+.imgWrapper a{
+    text-decoration:none;
+    color:black;
+    font-weight:400;
+    padding:5px;
+}
+
+
+/* =========================
+   SECTION 3 (New Arrivals)
+========================= */
+
+.section-3{
+    max-width:100%;
+    padding:10px;
+    margin-top:30px;
+}
+
+
+/* =========================
+   SECTION 4 (Why Choose Us)
+========================= */
+
+.section-4{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+}
+
+.section-4 h2{
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.features{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.features div{
+    background:white;
+    padding:18px;
+    border-radius:6px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.features div:hover{
+    transform:translateY(-5px);
+}
+
+.features h4{
+    margin-bottom:6px;
+    font-size:1.1rem;
+}
+
+.features p{
+    font-size:0.9rem;
+    color:#555;
+}
+
+
+/* =========================
+   TABLET (>=768px)
+========================= */
+
+@media (min-width:768px){
+
+/* category section */
+
+.hero-banner{
+    height:70vh;
+}
+
+.hero-content h1{
+    font-size:2.8rem;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+}
+
+.section-2{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.imgWrapper{
+    width:48%;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    box-shadow:2px 4px 12px rgba(0,0,0,0.15);
+}
+
+.heroImage{
+    width:75%;
+    height:85%;
+    object-fit:cover;
+    object-position:center;
+}
+
+/* why choose us */
+
+.features{
+    flex-direction:row;
+    justify-content:center;
+}
+
+.features div{
+    width:30%;
+}
+
+}
+
+
+/* =========================
+   DESKTOP (>=1024px)
+========================= */
+
+@media (min-width:1024px){
+
+.section-1 h1{
+    font-size:2rem;
+}
+
+.section-4{
+    max-width:1100px;
+    margin:auto;
+}
+
+.features div{
+    padding:25px;
+}
+
+}
