@@ -14,7 +14,8 @@ useEffect(()=>{
           try {
             const api = await fetch('https://fakestoreapi.com/products')
             const result = await api.json()
-            const mergedData=[...result,...clothes]
+            const data=result.filter(d=>d.category.endsWith("clothing"))
+            const mergedData=[...data,...clothes]
             console.log(mergedData,'Api + manual data');
             
             dispatch(setProducts(mergedData))
