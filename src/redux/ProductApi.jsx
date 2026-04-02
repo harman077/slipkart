@@ -5,30 +5,33 @@ import { setProducts } from './productslice'
 
 const ProductApi = () => {
 
-  const dispatch=useDispatch()
+  const dispatch = useDispatch()
 
-useEffect(()=>{
+  useEffect(() => {
 
-    const fetchProducts=async()=>{
-     
-          try {
-            const api = await fetch('https://fakestoreapi.com/products')
-            const result = await api.json()
-            const data=result.filter(d=>d.category.endsWith("clothing"))
-            const mergedData=[...data,...clothes]
-            console.log(mergedData,'Api + manual data');
-            
-            dispatch(setProducts(mergedData))
-    
-          } catch (error) {
-            console.log('Finding Error in api', error);
-    
-          }
-        }
-    
-        fetchProducts()
-    
-},[dispatch])
+    const fetchProducts = async () => {
+
+      try {
+        const api = await fetch('https://fakestoreapi.com/products')
+        const result = await api.json()
+        const data = result.filter(d => d.category.endsWith("clothing"))
+        const mergedData = [...data, ...clothes]
+        console.log(mergedData, 'Api + manual data');
+
+        dispatch(setProducts(mergedData))
+
+      } catch (error) {
+        const mergedData = [...clothes]
+        dispatch(setProducts(mergedData))//fallback
+        console.log('Finding Error in api', error);
+
+
+      }
+    }
+
+    fetchProducts()
+
+  }, [dispatch])
   return null
 }
 

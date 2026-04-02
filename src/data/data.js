@@ -8,6 +8,18 @@ import menImage7 from '../assets/images/menImages/white T-shirt.avif'
 import menImage8 from '../assets/images/menImages/menBlueCasualShirt.webp'
 import menImage9 from '../assets/images/menImages/menPrintedshirt.webp'
 
+//women Images
+import womenImage1 from '../assets/images/womenImages/denimwomenshirt.jpg'
+import womenImage2 from '../assets/images/womenImages/femaleFormalimage.webp'
+// import womenImage3 from '../assets/images/womenImages/GymPolot-shirt.jpg'
+import womenImage4 from '../assets/images/womenImages/istockphoto-941137092-1024x1024.jpg'
+import womenImage5 from '../assets/images/womenImages/pexels-ogproductionz-17244623.jpg'
+import womenImage6 from '../assets/images/womenImages/woman-8228723_1280.jpg'
+import womenImage7 from '../assets/images/womenImages/purple-clothes-white-woman-white-background-isolated-h_873925-1053887.jpg'
+import womenImage8 from '../assets/images/womenImages/women-8747913_1280.jpg'
+import womenImage9 from '../assets/images/womenImages/womenOversized -shirt.jpg'
+import womenImage10 from '../assets/images/womenImages/womenPinkCasualshirt.jpg'
+
 export const clothes = [
 
     // MEN SHIRTS
@@ -76,69 +88,69 @@ export const clothes = [
         category: "men's clothing"
     },
 
-    // WOMEN SHIRTS
-    // {
-    //     id: 40,
-    //     title: "Women White Cotton Shirt",
-    //     price: 1199,
-    //     image: "/images/women/shirt1.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 41,
-    //     title: "Women Pink Casual Shirt",
-    //     price: 1299,
-    //     image: "/images/women/shirt2.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 42,
-    //     title: "Women Oversized Shirt",
-    //     price: 1499,
-    //     image: "/images/women/shirt3.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 43,
-    //     title: "Women Blue Denim Shirt",
-    //     price: 1699,
-    //     image: "/images/women/shirt4.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 44,
-    //     title: "Women Checked Shirt",
-    //     price: 1399,
-    //     image: "/images/women/shirt5.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 45,
-    //     title: "Women Formal Shirt",
-    //     price: 1599,
-    //     image: "/images/women/shirt6.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 46,
-    //     title: "Women Printed Shirt",
-    //     price: 1349,
-    //     image: "/images/women/shirt7.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 47,
-    //     title: "Women Linen Shirt",
-    //     price: 1799,
-    //     image: "/images/women/shirt8.jpg",
-    //     category: "women's clothing"
-    // },
-    // {
-    //     id: 48,
-    //     title: "Women Black Stylish Shirt",
-    //     price: 1499,
-    //     image: "/images/women/shirt9.jpg",
-    //     category: "women's clothing"
-    // }
+    // WOMEN data
+{
+    id: 40,
+    title: "Women White Cotton Shirt",
+    price: 1199,
+    image: womenImage4,
+    category: "women's clothing"
+},
+{
+    id: 41,
+    title: "Women Pink Casual Shirt",
+    price: 1299,
+    image: womenImage10,
+    category: "women's clothing"
+},
+{
+    id: 42,
+    title: "Women Oversized Shirt",
+    price: 1499,
+    image: womenImage9,
+    category: "women's clothing"
+},
+{
+    id: 43,
+    title: "Women Blue Denim Shirt",
+    price: 1699,
+    image: womenImage1,
+    category: "women's clothing"
+},
+{
+    id: 44,
+    title: "Women Checked Shirt",
+    price: 1399,
+    image: womenImage5,
+    category: "women's clothing"
+},
+{
+    id: 45,
+    title: "Women Formal Shirt",
+    price: 1599,
+    image: womenImage2,
+    category: "women's clothing"
+},
+{
+    id: 46,
+    title: "Women Printed Shirt",
+    price: 1349,
+    image: womenImage7,
+    category: "women's clothing"
+},
+{
+    id: 47,
+    title: "Women Linen Shirt",
+    price: 1799,
+    image: womenImage6,
+    category: "women's clothing"
+},
+{
+    id: 48,
+    title: "Women Black Stylish Shirt",
+    price: 1499,
+    image: womenImage8,
+    category: "women's clothing"
+}
 
 ];

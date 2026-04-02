@@ -7,6 +7,8 @@ const WomenPage = () => {
  const loading= useSelector((state)=>state.products.loading)
  
   const WomenClothes= useSelector((state)=>state.products.allproducts)
+ 
+  
   return (
 
     <div className='mt-5'>
